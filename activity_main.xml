@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menjumlahkan 2 Bilangan"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Masukan Bilangan Pertama"
+        android:layout_below="@id/textView"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Masukan Bilangan Kedua"
+        android:layout_below="@+id/bil1"
+        />
+
+    <Button
+        android:id="@+id/btnCekBil"
+        android:layout_width="137dp"
+        android:layout_height="52dp"
+        android:text="Hitung Bilangan"
+        android:layout_below="@+id/bil2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Penjumlahan"
+        android:textSize="20dp"
+        android:layout_below="@id/btnCekBil"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/bil1"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:hint="hint"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/bil2"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:hint="hint"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="167dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:hint="hint"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
